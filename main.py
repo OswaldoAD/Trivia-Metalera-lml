@@ -32,7 +32,7 @@ while iniciar_trivia == True:
     print(numero_carga)
     time.sleep(1)
   #Pregunta 01
-  print(GREEN+"1) ¿Cuál es la banda autora del tema 'Paranoid' de 1970?\n"+RESET)
+  print(GREEN+"\n1) ¿Cuál es la banda autora del tema 'Paranoid' de 1970?\n"+RESET)
   print(YELLOW+"a) Megadeth")
   print("b) Black Sabbath")
   print("c) Iron Maiden")

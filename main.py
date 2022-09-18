@@ -18,9 +18,9 @@ nombre = input(BLUE+"¿Cual es tu nombre? "+CYAN)
 
 print("")
 while nombre in (""," ","  "):
-    nombre = input(BLUE+"Debes colocar un nombre: ") 
-  time.sleep(1)
-print(BLUE+"\nHola ", CYAN+nombre, BLUE+"tengo un desafio para ti")
+    nombre = input(BLUE+"Debes colocar un nombre: ")
+time.sleep(1)
+print(BLUE+"\nHola", CYAN+nombre, BLUE+"tengo un desafio para ti")
 time.sleep(2)
 print("\nPondremos a prueba tus conocimientos para saber si eres un verdadero metalero lml, comenzaras con", puntaje, "puntos, recuerda que respuesta acertada te suma y respuesta incorrecta te resta puntos dependiendo de la dificultad de la pregunta.")
 time.sleep(1)
@@ -41,9 +41,9 @@ while iniciar_trivia == True:
   print("b) Black Sabbath")
   print("c) Iron Maiden")
   print("d) Annihilator"+RESET)
-  respuesta_1 = input(YELLOW+"\n Tu respuesta: "+MAGENTA)
+  respuesta_1 = input(YELLOW+"\n Tu respuesta: "+MAGENTA).lower()
   while respuesta_1 not in ("a","b","c","d"):
-    respuesta_1 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ")
+    respuesta_1 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ").lower()
   if respuesta_1 == "b":
     puntaje += 10
     lista_puntos.append(10)
@@ -63,10 +63,10 @@ while iniciar_trivia == True:
   print("b) Paul McCartney")
   print("c) Ronnie James Dio")
   print("d) Ozzy Osbourne")
-  respuesta_2 = input("\n Tu respuesta: "+MAGENTA)
-      #Agregaremos una respuesta secreta, si el usuario ingresa lml
+  respuesta_2 = input("\n Tu respuesta: "+MAGENTA).lower()
+  #Agregaremos una respuesta secreta, si el usuario ingresa lml
   while respuesta_2 not in ("a","b","c","d","lml"):
-    respuesta_2 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ")
+    respuesta_2 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ").lower()
   if respuesta_2 == "a":
     lista_puntos.append(-10)
     puntaje -= 10
@@ -98,9 +98,9 @@ while iniciar_trivia == True:
   print("b) Live Aid")
   print("c) Woodstock")
   print("d) M'era Luna")
-  respuesta_3 = input("\n Tu respuesta: "+MAGENTA)
+  respuesta_3 = input("\n Tu respuesta: "+MAGENTA).lower()
   while respuesta_3 not in ("a","b","c","d"):
-    respuesta_3 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ")
+    respuesta_3 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ").lower()
   if respuesta_3 == "a":
     puntos_3 = random.randint (10, 20)
     lista_puntos.append(puntos_3)
@@ -121,9 +121,9 @@ while iniciar_trivia == True:
   print("b) Hamadria")
   print("c) Opeth")
   print("d) Therion")
-  respuesta_4 = input("\n Tu respuesta: "+MAGENTA)
+  respuesta_4 = input("\n Tu respuesta: "+MAGENTA).lower()
   while respuesta_4 not in ("a","b","c","d"):
-    respuesta_4 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ")
+    respuesta_4 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ").lower()
   if respuesta_4 == "a":
     lista_puntos.append("puntaje/2")
     puntaje = puntaje/2
@@ -155,9 +155,9 @@ while iniciar_trivia == True:
   opciones_p6 = ["Jack O Lantern","Eddie The Head","Vic Rattlehead","Murray"]
   for number in range (0,4):
     print(YELLOW+letra_opcion[number],opciones_p6[number])
-  respuesta_5 = input("\n Tu respuesta: "+MAGENTA)
+  respuesta_5 = input("\n Tu respuesta: "+MAGENTA).lower()
   while respuesta_5 not in ("a","b","c","d"):
-    respuesta_5 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ")
+    respuesta_5 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ").lower()
   if respuesta_5 == "c":
     puntaje+=10
     lista_puntos.append(10)
@@ -175,9 +175,9 @@ while iniciar_trivia == True:
   print(GREEN+ "\n6) ¿Hoy estas con suerte?")
   print(YELLOW+"\na) SI")
   print("b) NO")
-  respuesta_6 = input("\n Tu respuesta: "+MAGENTA)
+  respuesta_6 = input("\n Tu respuesta: "+MAGENTA).lower()
   while respuesta_6 not in ("a","b"):
-    respuesta_6 = input(BLUE+"Debes responder a o b. Ingresa nuevamente tu respuesta: ")
+    respuesta_6 = input(BLUE+"Debes responder a o b. Ingresa nuevamente tu respuesta: ").lower()
   time.sleep(1)
   print(BLUE+"La pondremos a prueba, haremos girar una ruleta por 8 segundos y el valor que salga se aumentara a tu puntaje final")
   input("\nPresiona enter para girar...")

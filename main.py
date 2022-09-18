@@ -15,7 +15,11 @@ puntaje = 0
 print(GREEN+"Bienvenido a la Trivia Metalera\n"+RESET)
 time.sleep(1)
 nombre = input(BLUE+"¿Cual es tu nombre? "+CYAN)
-time.sleep(1)
+
+print("")
+while nombre in (""," ","  "):
+    nombre = input(BLUE+"Debes colocar un nombre: ") 
+  time.sleep(1)
 print(BLUE+"\nHola ", CYAN+nombre, BLUE+"tengo un desafio para ti")
 time.sleep(2)
 print("\nPondremos a prueba tus conocimientos para saber si eres un verdadero metalero lml, comenzaras con", puntaje, "puntos, recuerda que respuesta acertada te suma y respuesta incorrecta te resta puntos dependiendo de la dificultad de la pregunta.")

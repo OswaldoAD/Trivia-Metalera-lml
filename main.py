@@ -199,6 +199,9 @@ while iniciar_trivia == True:
   print(MAGENTA+nombre, "alcanzaste", puntaje ,"puntos en total.")
   print(GREEN +"\n¿Deseas intentar la Trivia nuevamente")
   repetir_trivia = input("Ingresa 'si' para repetir o cualquier tecla para finalizar: ").lower()
-  if repetir_trivia != "si":
+  if repetir_trivia == "si":
+    print("\033c", end="")
+  elif repetir_trivia != "si":
     print(MAGENTA+"\nGracias por jugar la Trivia Metalera, espero que lo hayas pasado bien, ¡hasta pronto!"+RESET)
     iniciar_trivia = False
+    

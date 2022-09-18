@@ -125,9 +125,14 @@ while iniciar_trivia == True:
   while respuesta_4 not in ("a","b","c","d"):
     respuesta_4 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ").lower()
   if respuesta_4 == "a":
-    lista_puntos.append("puntaje/2")
-    puntaje = puntaje/2
-    print(RED+"\nIncorrecto, estamos muy lejos", CYAN+nombre+BLUE)
+    if puntaje <= 0:
+      lista_puntos.append(-10)
+      puntaje -= 10
+    else:
+      lista_puntos.append("puntaje/2")
+      puntaje = puntaje/2
+    time.sleep(1)
+    print(RED+"\nIncorrecto, estamos muy lejos",nombre+BLUE)
   elif respuesta_4 == "b":
     lista_puntos.append(-5)
     puntaje -= 5 

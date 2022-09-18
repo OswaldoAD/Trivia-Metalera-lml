@@ -126,8 +126,8 @@ while iniciar_trivia == True:
     respuesta_4 = input(BLUE+"Debes responder a,b,c o d. Ingresa nuevamente tu respuesta: ").lower()
   if respuesta_4 == "a":
     if puntaje <= 0:
-      lista_puntos.append(-10)
-      puntaje -= 10
+      lista_puntos.append("puntaje*2")
+      puntaje = puntaje*2
     else:
       lista_puntos.append("puntaje/2")
       puntaje = puntaje/2
